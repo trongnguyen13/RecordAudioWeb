@@ -1,0 +1,45 @@
+﻿#recordingslist {
+    list-style: none;
+    padding:0px;
+}
+
+#recordingslist li{
+    margin-bottom: 10px;
+}
+
+#recordingslist audio {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.speech {
+    border: 1px solid #DDD;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+    .speech input {
+        border: 0;
+        width: 240px;
+        display: inline-block;
+        height: 30px;
+    }
+
+    .speech img {
+        float: right;
+        width: 40px;
+        background: url('../img/mic1.png') no-repeat;
+        background-size: 30px;
+        height: 30px;
+        margin-right: -10px;
+    }
+
+        .speech img.recording {
+            float: right;
+            width: 40px;
+            background: url('../img/mic-recording.png') no-repeat;
+            background-size: 30px;
+            height: 30px;
+            margin-right: -10px;
+        }
