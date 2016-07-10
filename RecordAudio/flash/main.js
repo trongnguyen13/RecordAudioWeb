@@ -5,11 +5,11 @@ function include(destination) {
     window.document.head.appendChild(e);
 }
 
-include('ie/jRecorder.js');
+include('flash/jRecorder.js');
 
 function init() {
     audioFileName = 'audio_recording_' + new Date().getTime() + '.wav';
-    var hostUrl = 'http://' + window.location.host + '/ie/upload.aspx?filename=' + audioFileName;
+    var hostUrl = 'http://' + window.location.host + '/flash/upload.aspx?filename=' + audioFileName;
     $.jRecorder(
           {
               host: hostUrl,
@@ -20,7 +20,7 @@ function init() {
               callback_activityTime: function (time) { callback_activityTime(time); },
 
               callback_finished_sending: function (time) { callback_finished_sending() },
-              swf_path: 'ie/jRecorder.swf',
+              swf_path: 'flash/jRecorder.swf',
           }
         );
 }
@@ -53,24 +53,35 @@ function callback_finished_recording() {
 }
 
 function callback_finished_sending() {
-    setTimeout(function () {
-        var li = document.createElement('li');
-        var au = document.createElement('audio');
-        var hf = document.createElement('a');
-        var url = 'http://' + window.location.host + '/ie/upload/' + audioFileName;
-        au.controls = true;
-        au.src = url;
+    checkFile();
+}
 
-        hf.innerText = audioFileName;
-        hf.href = url;
-        hf.download = audioFileName;
+function checkFile() {
+    var url = 'http://' + window.location.host + '/flash/upload/' + audioFileName;
+    $.ajax({
+        type: 'GET',
+        url: url,
+        error: function () {
+            setTimeout(function () { checkFile(); }, 3000);
+        },
+        success: function (data) {
+            var li = document.createElement('li');
+            var au = document.createElement('audio');
+            var hf = document.createElement('a');
+            var url = 'http://' + window.location.host + '/flash/upload/' + audioFileName;
+            au.controls = true;
+            au.src = url;
 
-        li.appendChild(au);
-        li.appendChild(hf);
-        recordingslist.appendChild(li);
+            hf.innerText = audioFileName;
+            hf.href = url;
+            hf.download = audioFileName;
 
-    }, 500);
-  
+            li.appendChild(au);
+            li.appendChild(hf);
+            recordingslist.innerHTML = "";
+            recordingslist.appendChild(li);
+        }
+    });
 }
 
 function callback_activityLevel(level) {

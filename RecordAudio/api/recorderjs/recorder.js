@@ -130,6 +130,7 @@ DEALINGS IN THE SOFTWARE.
 
         li.appendChild(au);
         li.appendChild(hf);
+        recordingslist.innerHTML = "";
         recordingslist.appendChild(li);
 
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace RecordAudio.ie
+namespace RecordAudio.flash
 {
     public partial class upload : System.Web.UI.Page
     {
@@ -21,7 +21,7 @@ namespace RecordAudio.ie
 
                 string fileName = Request.QueryString["filename"];
 
-                FileStream fs = new FileStream(Server.MapPath("/ie/upload/") + fileName, FileMode.Create);
+                FileStream fs = new FileStream(Server.MapPath("/flash/upload/") + fileName, FileMode.Create);
 
                 BinaryWriter bw = new BinaryWriter(fs);
 

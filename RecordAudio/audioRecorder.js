@@ -9,18 +9,17 @@
         toggleRecording(element);
     }
 
-    function isIE() {
-        var ua = window.navigator.userAgent;
-        var msie = ua.indexOf("MSIE ");
-        return msie > 0;
+    function isAudioSupported() {
+        window.AudioContext = window.AudioContext || window.webkitAudioContext;
+        return !!window.AudioContext;
     }
 
     function initScripts() {
-        if (!isIE()) {
-            include("ie/main.js");
+        if (isAudioSupported()) {
+            include("api/recorderjs/recorder.js");
+            include("api/main.js");
         } else {
-            include("js/recorderjs/recorder.js");
-            include("js/main.js");
+            include("flash/main.js");
         }
     }
 

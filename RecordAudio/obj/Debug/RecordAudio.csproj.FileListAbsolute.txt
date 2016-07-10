@@ -30,3 +30,35 @@ c:\users\nguyen\documents\visual studio 2015\Projects\RecordAudio\RecordAudio\bi
 c:\users\nguyen\documents\visual studio 2015\Projects\RecordAudio\RecordAudio\obj\Debug\RecordAudio.csprojResolveAssemblyReference.cache
 c:\users\nguyen\documents\visual studio 2015\Projects\RecordAudio\RecordAudio\obj\Debug\RecordAudio.dll
 c:\users\nguyen\documents\visual studio 2015\Projects\RecordAudio\RecordAudio\obj\Debug\RecordAudio.pdb
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\csc.exe
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\System.Collections.Immutable.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\System.Reflection.Metadata.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\vbc.exe
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\VBCSCompiler.exe
+D:\Code\RecordAudioWeb\RecordAudio\bin\roslyn\VBCSCompiler.exe.config
+D:\Code\RecordAudioWeb\RecordAudio\bin\RecordAudio.dll.config
+D:\Code\RecordAudioWeb\RecordAudio\bin\RecordAudio.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\RecordAudio.pdb
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.DependencyCollector.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.Web.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.WindowsServer.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.ApplicationInsights.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.DependencyCollector.xml
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.Web.xml
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.AI.WindowsServer.xml
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.ApplicationInsights.xml
+D:\Code\RecordAudioWeb\RecordAudio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Code\RecordAudioWeb\RecordAudio\obj\Debug\RecordAudio.csprojResolveAssemblyReference.cache
+D:\Code\RecordAudioWeb\RecordAudio\obj\Debug\RecordAudio.dll
+D:\Code\RecordAudioWeb\RecordAudio\obj\Debug\RecordAudio.pdb

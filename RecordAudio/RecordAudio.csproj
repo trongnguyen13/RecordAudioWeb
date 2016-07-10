@@ -105,30 +105,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="jquery.min.js" />
-    <Content Include="ie\jRecorder.js" />
-    <Content Include="ie\jRecorder.swf" />
-    <Content Include="ie\main.js" />
-    <Content Include="ie\upload.aspx" />
+    <Content Include="flash\jRecorder.js" />
+    <Content Include="flash\jRecorder.swf" />
+    <Content Include="flash\main.js" />
+    <Content Include="flash\upload.aspx" />
     <Content Include="img\mic-recording.png" />
     <Content Include="img\mic.png" />
     <Content Include="index.html" />
-    <Content Include="js\main.js" />
-    <Content Include="js\recorderjs\recorder.js" />
-    <Content Include="js\recorderjs\recorderWorker.js" />
+    <Content Include="api\main.js" />
+    <Content Include="api\recorderjs\recorder.js" />
+    <Content Include="api\recorderjs\recorderWorker.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ie\upload.aspx.cs">
+    <Compile Include="flash\upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ie\upload.aspx.designer.cs">
+    <Compile Include="flash\upload.aspx.designer.cs">
       <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ie\upload\" />
+    <Folder Include="flash\upload\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

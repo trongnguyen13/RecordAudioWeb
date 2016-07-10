@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="upload.aspx.cs" Inherits="RecordAudio.ie.upload" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="upload.aspx.cs" Inherits="RecordAudio.flash.upload" %>
 
 <!DOCTYPE html>
 
