@@ -6,6 +6,7 @@ function include(destination) {
 }
 
 include('flash/jRecorder.js');
+include('flash/convertToMp3.js');
 
 function init() {
     audioFileName = 'audio_recording_' + new Date().getTime() + '.wav';
@@ -69,8 +70,10 @@ function checkFile() {
             var au = document.createElement('audio');
             var hf = document.createElement('a');
             var url = 'http://' + window.location.host + '/flash/upload/' + audioFileName;
+            au.className = "ie-control";
             au.controls = true;
-            au.src = url;
+            convertToMp3(url, au);
+            //au.src = url;
 
             hf.innerText = audioFileName;
             hf.href = url;
